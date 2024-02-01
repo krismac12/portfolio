@@ -2,14 +2,14 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Import Link component for routing
-import homeCSS from "../CSS/home.module.css"; // Import CSS module for styling
+import navbar from "../CSS/navbar.module.css"; // Import CSS module for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon component
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Import FontAwesome icons
 
 // MainNavbar component responsible for rendering the navigation bar
 const MainNavbar = () => {
     return (
-        <div className="app">
+        <div className="main">
             {/* Navbar of Home Page */}
             <Navbar bg="dark" variant="dark" expand="lg">
                 {/* Logo */}
@@ -23,10 +23,10 @@ const MainNavbar = () => {
                         <Nav.Link as={Link} to="/services">References</Nav.Link>
                     </Nav>
                     {/* Right-aligned navigation links */}
-                    <Nav className={`ml-auto ${homeCSS['custom-nav']}`}>
+                    <Nav className={`ml-auto ${navbar['custom-nav']}`}>
                         {/* Download CV button */}
-                        <a href="https://drive.google.com/file/d/1iKgnYfQ17T0zfQlfnRtzZKoVZidrW0f-/view?usp=sharing" target="_blank" className={homeCSS['custom-button-link']}>
-                            <Button variant="outline-light" className={homeCSS['custom-button']}>Download CV</Button>
+                        <a href="https://drive.google.com/file/d/1iKgnYfQ17T0zfQlfnRtzZKoVZidrW0f-/view?usp=sharing" target="_blank" className={navbar['custom-button-link']}>
+                            <Button variant="outline-light" className={navbar['custom-button']}>Download CV</Button>
                         </a>
                         {/* GitHub icon link */}
                         <Nav.Link href="https://github.com/krismac12" target="_blank" className="ml-3"><FontAwesomeIcon icon={faGithub} size="2x" /></Nav.Link>

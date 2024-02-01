@@ -1,0 +1,21 @@
+/* Styles for custom buttons */
+.custom-button {
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    font-size: 10pt;
+}
+
+.custom-button:hover {
+    color: black;
+}
+
+/* Styles for button links */
+.custom-button-link {
+    margin: auto;
+}
+
+/* Styles for navigation links */
+.custom-nav {
+    margin-right: 5%;
+}
