@@ -9,7 +9,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Im
 // MainNavbar component responsible for rendering the navigation bar
 const MainNavbar = () => {
     return (
-        <div className="main">
+        <div className={navbar['main']}>
             {/* Navbar of Home Page */}
             <Navbar bg="dark" variant="dark" expand="lg">
                 {/* Logo */}

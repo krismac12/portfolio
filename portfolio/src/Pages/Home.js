@@ -2,10 +2,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import MainNavbar from '../Components/MainNavbar';
 import homeCSS from "../CSS/home.module.css"; // Import CSS module for styling
+import pagesCSS from "../CSS/pages.module.css"; // Import CSS module for styling
+
 import { Card, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { motion, useScroll } from "framer-motion";
 
 /**
  * Home component displays a carousel of projects with left and right navigation arrows.
@@ -96,11 +100,194 @@ const Home = () => {
         }
     };
 
+
     // Render component
     return (
-        <div className="main">
+        <div className={pagesCSS['main']}>
             {/* MainNavbar component for navigation */}
             <MainNavbar />
+
+            {/* Animation div first*/}
+
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0 }} viewport={{ once: true }}>
+                <div className={pagesCSS["full-height"]}>
+                    <Container className="my-5">
+                        <Row>
+                            <Col md={6}> {/* Adjust the column size to your preference */}
+                                <div className={homeCSS['title']}>
+                                    <h2 className="text-left"><b>My Name Is Kristan Macaraeg</b></h2>
+                                    <h3 className="text-left">A <span className={pagesCSS['highlight']}>Full-Stack Developer</span></h3>
+                                </div>
+                        
+                                <motion.p
+                                    initial={{ opacity: 0, y: '100%' }}
+                                    animate={{
+                                        opacity: 0.5,
+                                        y: 0,
+                                    }}
+                                    transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
+                                    whileInView={{ opacity: 1, color: 'black', background: 'white', y: 0 }} // Only animate when in view
+                                    viewport={{ once: true }}
+                                >
+                                    <h5>I am a <span className={pagesCSS['highlight']}>passionate developer</span> dedicated to sculpting immersive digital landscapes. With expertise in both <span className={pagesCSS['highlight']}>frontend and backend technologies</span>, I orchestrate seamless user interactions while fortifying the structural integrity of digital systems. Driven by innovation, I thrive on <span className={pagesCSS['highlight']}>transforming concepts into captivating online realities.</span></h5>
+                                </motion.p>
+                                <motion.div initial={{ opacity: 0, x: '-10%' }} animate={{ opacity: 1, x: '0%' }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} viewport={{ once: true }}>
+                                    <button className="btn btn-primary">Contact Info</button>
+                                </motion.div>
+                            </Col>
+                            
+                            <Col md={6}> {/* Adjust the column size to your preference */}
+                                {/* Add your image here */}
+                                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} viewport={{ once: true }}>
+                                    <img src="Portrait.jpg" alt="Your Image" className={homeCSS['portrait']} />                                
+                                </motion.div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </motion.div>
+
+            {/* Animation div second*/}
+
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0 }} viewport={{ once: true }}>
+                <div className={pagesCSS["full-height"]}>
+                    {/* Add a div with full-height class */}
+                    <Container className="my-5">
+                        <Row>
+                            <Col>
+                                <div className={homeCSS['title']}>
+                                    <h2 className="text-left"><b>Crafting Captivating User Experiences</b></h2>
+                                    <h3 className="text-left"><span className={pagesCSS['highlight']}>Elevating</span> digital engagement through <span className={pagesCSS['highlight']}>innovative</span> front-end design</h3>
+                                </div>
+                                <motion.p
+                                    initial={{ opacity: 0, y: '-10%', width: '0%' }}
+                                    animate={{
+                                        opacity: 0.5,
+                                        y: 0,
+                                        width: '0%'
+                                    }}
+                                    transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
+                                    whileInView={{ opacity: 1, color: 'black', background: 'white', x: 0, width: '100%' }} // Only animate when in view
+                                    className="mb-5"
+                                    viewport={{ once: true }}
+                                >
+                                    <h5>I specialize in <span className={pagesCSS['highlight']}>crafting captivating user experiences </span> using HTML, CSS, and JavaScript, with a focus on modern front-end frameworks like React.js. With a keen eye for detail and a <span className={pagesCSS['highlight']}> passion for innovation </span>, I strive to create <span className={pagesCSS['highlight']}>visually stunning and intuitive interfaces </span> that engage users from the moment they land on a page.</h5>
+                                </motion.p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md={4} className="mb-4">
+                                <Card>
+                                    <Card.Img variant="top" src="image1.jpg" alt="Info Card 1" />
+                                    <Card.Body>
+                                        <Card.Title>Info Card 1 Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </Card.Text>
+                                        <button className="btn btn-primary">Button 1</button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4} className="mb-4">
+                                <Card>
+                                    <Card.Img variant="top" src="image2.jpg" alt="Info Card 2" />
+                                    <Card.Body>
+                                        <Card.Title>Info Card 2 Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </Card.Text>
+                                        <button className="btn btn-primary">Button 2</button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4} className="mb-4">
+                                <Card>
+                                    <Card.Img variant="top" src="image3.jpg" alt="Info Card 3" />
+                                    <Card.Body>
+                                        <Card.Title>Info Card 3 Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </Card.Text>
+                                        <button className="btn btn-primary">Button 3</button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </motion.div>
+
+            {/* Animation div second*/}
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0 }} viewport={{ once: true }}>
+                <div className={pagesCSS["full-height"]}>
+                    {/* Add a div with full-height class */}
+                    <Container className="my-5">
+                        <Row>
+                            <Col>
+                                <div className={homeCSS['title']}>
+                                    <h2 className="text-left"><b>Unlocking Backend Potentials</b></h2>
+                                    <h3 className="text-left"><span className={pagesCSS['highlight']}>Empowering</span> digital ecosystems<span className={pagesCSS['highlight']}></span></h3>
+                                </div>
+                                <motion.p
+                                    initial={{ opacity: 0, y: '-10%', width: '0%' }}
+                                    animate={{
+                                        opacity: 0.5,
+                                        y: 0,
+                                        width: '0%'
+                                    }}
+                                    transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
+                                    whileInView={{ opacity: 1, color: 'black', background: 'white', x: 0, width: '100%' }} // Only animate when in view
+                                    className="mb-5"
+                                    viewport={{ once: true }}
+                                >
+                                    <h5>I specialize in <span className={pagesCSS['highlight']}>crafting captivating user experiences </span> using HTML, CSS, and JavaScript, with a focus on modern front-end frameworks like React.js. With a keen eye for detail and a <span className={pagesCSS['highlight']}> passion for innovation </span>, I strive to create <span className={pagesCSS['highlight']}>visually stunning and intuitive interfaces </span> that engage users from the moment they land on a page.</h5>
+                                </motion.p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md={4} className="mb-4">
+                                <Card>
+                                    <Card.Img variant="top" src="image1.jpg" alt="Info Card 1" />
+                                    <Card.Body>
+                                        <Card.Title>Info Card 1 Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </Card.Text>
+                                        <button className="btn btn-primary">Button 1</button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4} className="mb-4">
+                                <Card>
+                                    <Card.Img variant="top" src="image2.jpg" alt="Info Card 2" />
+                                    <Card.Body>
+                                        <Card.Title>Info Card 2 Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </Card.Text>
+                                        <button className="btn btn-primary">Button 2</button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4} className="mb-4">
+                                <Card>
+                                    <Card.Img variant="top" src="image3.jpg" alt="Info Card 3" />
+                                    <Card.Body>
+                                        <Card.Title>Info Card 3 Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </Card.Text>
+                                        <button className="btn btn-primary">Button 3</button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }} viewport={{ once: true }}> 
+                
             {/* Title for the projects section */}
             <h2>My Projects</h2>
             <div className={homeCSS['conteudo-container']}>
@@ -134,9 +321,11 @@ const Home = () => {
                     <FontAwesomeIcon icon={faArrowRight} />
                 </button>
             </div>
+            </motion.div>
         </div>
     );
 
 }
 
 export default Home;
+
