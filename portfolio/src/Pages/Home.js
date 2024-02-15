@@ -160,58 +160,65 @@ const Home = () => {
                                     <h3 className="text-left"><span className={pagesCSS['highlight']}>Elevating</span> digital engagement through <span className={pagesCSS['highlight']}>innovative</span> front-end design</h3>
                                 </div>
                                 <motion.p
-                                    initial={{ opacity: 0, y: '-10%', width: '0%' }}
+                                    initial={{ opacity: 0, y: '-100%' }}
                                     animate={{
                                         opacity: 0.5,
                                         y: 0,
-                                        width: '0%'
                                     }}
-                                    transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
-                                    whileInView={{ opacity: 1, color: 'black', background: 'white', x: 0, width: '100%' }} // Only animate when in view
-                                    className="mb-5"
+                                    transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
+                                    whileInView={{ opacity: 1, color: 'black', background: 'white', y: 0 }} // Only animate when in view
                                     viewport={{ once: true }}
                                 >
                                     <h5>I specialize in <span className={pagesCSS['highlight']}>crafting captivating user experiences </span> using HTML, CSS, and JavaScript, with a focus on modern front-end frameworks like React.js. With a keen eye for detail and a <span className={pagesCSS['highlight']}> passion for innovation </span>, I strive to create <span className={pagesCSS['highlight']}>visually stunning and intuitive interfaces </span> that engage users from the moment they land on a page.</h5>
                                 </motion.p>
                             </Col>
                         </Row>
+                        {/* Info Cards about my skill-set */}
                         <Row>
                             <Col md={4} className="mb-4">
-                                <Card>
-                                    <Card.Img variant="top" src="image1.jpg" alt="Info Card 1" />
-                                    <Card.Body>
-                                        <Card.Title>Info Card 1 Title</Card.Title>
+                                <Card className="h-100">
+                                    <Card.Body className="d-flex flex-column">
+                                        <Card.Title>HTML/CSS</Card.Title>
+                                        <Card.Img variant="top" src="html&css.webp" alt="HTML/CSS" style={{ width: '100%', height: '200px' }} />
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Proficient in HTML and CSS, I specialize in crafting visually appealing and responsive web interfaces. With expertise in modern CSS techniques, I focus on creating intuitive user experiences across various devices.
                                         </Card.Text>
-                                        <button className="btn btn-primary">Button 1</button>
+                                        <div className="mt-auto">
+                                            <button className="btn btn-primary">Info Page</button>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
                             <Col md={4} className="mb-4">
-                                <Card>
-                                    <Card.Img variant="top" src="image2.jpg" alt="Info Card 2" />
-                                    <Card.Body>
-                                        <Card.Title>Info Card 2 Title</Card.Title>
+                                <Card className="h-100">
+                                    <Card.Body className="d-flex flex-column">
+                                        <Card.Title>JavaScript</Card.Title>
+                                        <Card.Img variant="top" src="JS.jpg" alt="JavaScript" style={{ width: '100%', height: '200px' }} />
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Skilled in JavaScript, I leverage its power to develop dynamic and interactive web applications. From front-end interactivity to back-end functionality, I harness JavaScript to create seamless user experiences and robust web solutions.
                                         </Card.Text>
-                                        <button className="btn btn-primary">Button 2</button>
+                                        <div className="mt-auto">
+                                            <button className="btn btn-primary">Info Page</button>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
                             <Col md={4} className="mb-4">
-                                <Card>
-                                    <Card.Img variant="top" src="image3.jpg" alt="Info Card 3" />
-                                    <Card.Body>
-                                        <Card.Title>Info Card 3 Title</Card.Title>
+                                <Card className="h-100">
+                                    <Card.Body className="d-flex flex-column">
+                                        <Card.Title>React</Card.Title>
+                                        <Card.Img variant="top" src="React.jpg" alt="React" style={{ width: '100%', height: '200px' }} />
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Proficient in React.js, I craft efficient and scalable web interfaces with reusable components. Leveraging React's declarative syntax and virtual DOM, I build modern and responsive user interfaces that enhance user engagement.
                                         </Card.Text>
-                                        <button className="btn btn-primary">Button 3</button>
+                                        <div className="mt-auto">
+                                            <button className="btn btn-primary">Info Page</button>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
+
+
                         </Row>
                     </Container>
                 </div>
@@ -240,88 +247,103 @@ const Home = () => {
                                     className="mb-5"
                                     viewport={{ once: true }}
                                 >
-                                    <h5>I specialize in <span className={pagesCSS['highlight']}>crafting captivating user experiences </span> using HTML, CSS, and JavaScript, with a focus on modern front-end frameworks like React.js. With a keen eye for detail and a <span className={pagesCSS['highlight']}> passion for innovation </span>, I strive to create <span className={pagesCSS['highlight']}>visually stunning and intuitive interfaces </span> that engage users from the moment they land on a page.</h5>
+                                    <h5>I am a passionate developer dedicated to sculpting immersive <span className={pagesCSS['highlight']}>digital landscapes </span>. With expertise in <span className={pagesCSS['highlight']}>frontend and backend technologies</span>, I orchestrate seamless user interactions while fortifying the structural integrity of digital systems. <span className={pagesCSS['highlight']}>Driven by innovation</span> I thrive on transforming concepts into captivating online realities. </h5>                                       
                                 </motion.p>
                             </Col>
                         </Row>
                         <Row>
+                            {/* Info Cards about my skill-set back-end */}
                             <Col md={4} className="mb-4">
-                                <Card>
-                                    <Card.Img variant="top" src="image1.jpg" alt="Info Card 1" />
-                                    <Card.Body>
-                                        <Card.Title>Info Card 1 Title</Card.Title>
+                                <Card className="h-100">
+                                    <Card.Body className="d-flex flex-column">
+                                        <Card.Title>Node.js</Card.Title>
+                                        <Card.Img variant="top" src="nodejs.jpg" alt="Node.js" style={{ width: '100%', height: '200px' }} />
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Proficient in Node.js, I leverage its asynchronous and event-driven architecture to build scalable server-side applications, including RESTful APIs and real-time applications.
                                         </Card.Text>
-                                        <button className="btn btn-primary">Button 1</button>
+                                        <div className="mt-auto">
+                                            <button className="btn btn-primary">Info Page</button>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
+
                             <Col md={4} className="mb-4">
-                                <Card>
-                                    <Card.Img variant="top" src="image2.jpg" alt="Info Card 2" />
-                                    <Card.Body>
-                                        <Card.Title>Info Card 2 Title</Card.Title>
+                                <Card className="h-100">
+                                    <Card.Body className="d-flex flex-column">
+                                        <Card.Title>SQL Database</Card.Title>
+                                        <Card.Img variant="top" src="sql.jpg" alt="SQL Database" style={{ width: '100%', height: '200px' }} />
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Skilled in SQL database management, I design and optimize database schemas, perform complex queries, and ensure data integrity and security.
                                         </Card.Text>
-                                        <button className="btn btn-primary">Button 2</button>
+                                        <div className="mt-auto">
+                                            <button className="btn btn-primary">Info Page</button>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
+
                             <Col md={4} className="mb-4">
-                                <Card>
-                                    <Card.Img variant="top" src="image3.jpg" alt="Info Card 3" />
-                                    <Card.Body>
-                                        <Card.Title>Info Card 3 Title</Card.Title>
+                                <Card className="h-100">
+                                    <Card.Body className="d-flex flex-column">
+                                        <Card.Title>Express.js</Card.Title>
+                                        <Card.Img variant="top" src="express.jpg" alt="Express.js" style={{ width: '100%', height: '200px' }} />
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            Proficient in Express.js, I utilize its minimalist and flexible web application framework to develop robust and scalable server-side applications, including routing and middleware.
                                         </Card.Text>
-                                        <button className="btn btn-primary">Button 3</button>
+                                        <div className="mt-auto">
+                                            <button className="btn btn-primary">Info Page</button>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
+
+
+
+
                         </Row>
                     </Container>
                 </div>
             </motion.div>
+            <Container>
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }} viewport={{ once: true }}>
 
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }} viewport={{ once: true }}> 
-                
-            {/* Title for the projects section */}
-            <h2>My Projects</h2>
-            <div className={homeCSS['conteudo-container']}>
-                {/* Left navigation button */}
-                <button className={homeCSS['arrow-button']} onClick={scrollLeft}>
-                    <FontAwesomeIcon icon={faArrowLeft} />
-                </button>
-                <div className={homeCSS['conteudo']}>
-                    <div className={homeCSS['carousel']} ref={contentRef}>
-                        {/* Map through projects and render project cards */}
-                        {projects.map(project => (
-                            <div className={homeCSS['card-container']} key={project.id}>
-                                {/* Individual project card */}
-                                <Card className={homeCSS['card']}>
-                                    <Card.Img variant="top" src={project.image} />
-                                    <Card.Body>
-                                        <Card.Title>{project.name}</Card.Title>
-                                        <Card.Text>{project.description}</Card.Text>
-                                        {/* Button to view project details */}
-                                        <Link to={project.pageLink}>
-                                            <Button variant="primary">View Project</Button>
-                                        </Link>
-                                    </Card.Body>
-                                </Card>
+                    {/* Title for the projects section */}
+                    <h2 className="text-left"><b>My Projects</b></h2>
+                    <br/>
+                    <div className={homeCSS['conteudo-container']}>
+                        {/* Left navigation button */}
+                        <button className={homeCSS['arrow-button']} onClick={scrollLeft}>
+                            <FontAwesomeIcon icon={faArrowLeft} />
+                        </button>
+                        <div className={homeCSS['conteudo']}>
+                            <div className={homeCSS['carousel']} ref={contentRef}>
+                                {/* Map through projects and render project cards */}
+                                {projects.map(project => (
+                                    <div className={homeCSS['card-container']} key={project.id}>
+                                        {/* Individual project card */}
+                                        <Card className={homeCSS['card']}>
+                                            <Card.Img variant="top" src={project.image} />
+                                            <Card.Body>
+                                                <Card.Title>{project.name}</Card.Title>
+                                                <Card.Text>{project.description}</Card.Text>
+                                                {/* Button to view project details */}
+                                                <Link to={project.pageLink}>
+                                                    <Button variant="primary">View Project</Button>
+                                                </Link>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+                        {/* Right navigation button */}
+                        <button className={homeCSS['arrow-button']} onClick={scrollRight}>
+                            <FontAwesomeIcon icon={faArrowRight} />
+                        </button>
                     </div>
-                </div>
-                {/* Right navigation button */}
-                <button className={homeCSS['arrow-button']} onClick={scrollRight}>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                </button>
-            </div>
-            </motion.div>
+                </motion.div>
+            </Container>
         </div>
     );
 

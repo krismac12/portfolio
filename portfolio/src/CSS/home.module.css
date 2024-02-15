@@ -1,12 +1,12 @@
 /* home.module.css */
 .conteudo-container{
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 .conteudo{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
