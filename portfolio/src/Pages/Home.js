@@ -5,7 +5,7 @@ import homeCSS from "../CSS/home.module.css"; // Import CSS module for styling
 import pagesCSS from "../CSS/pages.module.css"; // Import CSS module for styling
 
 import { Card, Button } from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col,Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -184,7 +184,7 @@ const Home = () => {
                                             Proficient in HTML and CSS, I specialize in crafting visually appealing and responsive web interfaces. With expertise in modern CSS techniques, I focus on creating intuitive user experiences across various devices.
                                         </Card.Text>
                                         <div className="mt-auto">
-                                            <button className="btn btn-primary">Info Page</button>
+                                            <button className="btn btn-primary"><Nav.Link as={Link} to="/skill/html">Info Page</Nav.Link></button>
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -198,7 +198,7 @@ const Home = () => {
                                             Skilled in JavaScript, I leverage its power to develop dynamic and interactive web applications. From front-end interactivity to back-end functionality, I harness JavaScript to create seamless user experiences and robust web solutions.
                                         </Card.Text>
                                         <div className="mt-auto">
-                                            <button className="btn btn-primary">Info Page</button>
+                                            <button className="btn btn-primary"><Nav.Link as={Link} to="/skill/javascript">Info Page</Nav.Link></button>
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -212,7 +212,7 @@ const Home = () => {
                                             Proficient in React.js, I craft efficient and scalable web interfaces with reusable components. Leveraging React's declarative syntax and virtual DOM, I build modern and responsive user interfaces that enhance user engagement.
                                         </Card.Text>
                                         <div className="mt-auto">
-                                            <button className="btn btn-primary">Info Page</button>
+                                            <button className="btn btn-primary"><Nav.Link as={Link} to="/skill/react">Info Page</Nav.Link></button>
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -262,7 +262,7 @@ const Home = () => {
                                             Proficient in Node.js, I leverage its asynchronous and event-driven architecture to build scalable server-side applications, including RESTful APIs and real-time applications.
                                         </Card.Text>
                                         <div className="mt-auto">
-                                            <button className="btn btn-primary">Info Page</button>
+                                            <button className="btn btn-primary"><Nav.Link as={Link} to="/skill/node">Info Page</Nav.Link></button>
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -277,7 +277,7 @@ const Home = () => {
                                             Skilled in SQL database management, I design and optimize database schemas, perform complex queries, and ensure data integrity and security.
                                         </Card.Text>
                                         <div className="mt-auto">
-                                            <button className="btn btn-primary">Info Page</button>
+                                            <button className="btn btn-primary"><Nav.Link as={Link} to="/skill/sql">Info Page</Nav.Link></button>
                                         </div>
                                     </Card.Body>
                                 </Card>
@@ -292,7 +292,7 @@ const Home = () => {
                                             Proficient in Express.js, I utilize its minimalist and flexible web application framework to develop robust and scalable server-side applications, including routing and middleware.
                                         </Card.Text>
                                         <div className="mt-auto">
-                                            <button className="btn btn-primary">Info Page</button>
+                                            <button className="btn btn-primary"><Nav.Link as={Link} to="/skill/express">Info Page</Nav.Link></button>
                                         </div>
                                     </Card.Body>
                                 </Card>

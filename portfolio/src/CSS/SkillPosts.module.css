@@ -1,0 +1,6 @@
+.image {
+    width: 65%;
+    /* Adjust the width as per your requirement */
+    object-fit: cover;
+    /* Ensures the image covers the specified dimensions */
+}
