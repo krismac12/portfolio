@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Pages/Home';
+import SkillPost from './Pages/SkillPost';
 
 // App component responsible for routing and rendering the application
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         {/* Define route for the Home page */}
         <Route path="/" exact element={<Home />}></Route>
+        <Route path="/skill/:skill" exact element={<SkillPost />}></Route>
       </Routes>
     </BrowserRouter>
   );
