@@ -20,7 +20,7 @@ const MainNavbar = () => {
                     <Nav className="mx-auto">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <Nav.Link as={Link} to="/about">Portfolio</Nav.Link>
-                        <Nav.Link as={Link} to="/services">References</Nav.Link>
+                        <Nav.Link as={Link} to="/references">References</Nav.Link>
                     </Nav>
                     {/* Right-aligned navigation links */}
                     <Nav className={`ml-auto ${navbar['custom-nav']}`}>
