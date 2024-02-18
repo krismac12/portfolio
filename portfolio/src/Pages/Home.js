@@ -153,7 +153,7 @@ const Home = () => {
 
             {/* Animation div second*/}
 
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0 }} viewport={{ once: true }}>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2 }} viewport={{ once: true }}>
                 <div className={pagesCSS["full-height"]}>
                     {/* Add a div with full-height class */}
                     <Container className="my-5">
@@ -169,7 +169,7 @@ const Home = () => {
                                         opacity: 0.5,
                                         y: 0,
                                     }}
-                                    transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
+                                    transition={{ delay: 0.2, duration: 1, ease: 'easeInOut' }}
                                     whileInView={{ opacity: 1, color: 'black', background: 'white', y: 0 }} // Only animate when in view
                                     viewport={{ once: true }}
                                 >

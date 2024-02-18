@@ -1,7 +1,7 @@
 // Import necessary dependencies
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Container, Card } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import pagesCSS from "../CSS/pages.module.css"; // Import CSS module for styling
 import SkillPostCSS from "../CSS/SkillPosts.module.css"; // Import CSS module for styling
 
