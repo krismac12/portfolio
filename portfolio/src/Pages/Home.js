@@ -9,7 +9,7 @@ import { Container, Row, Col,Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 /**
  * Home component displays a carousel of projects with left and right navigation arrows.
@@ -100,6 +100,10 @@ const Home = () => {
         }
     };
 
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     // Render component
     return (
