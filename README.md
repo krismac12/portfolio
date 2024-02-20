@@ -19,12 +19,4 @@ Technologies Used
     Bootstrap (for responsive design and UI components)
     Git (for version control and collaboration)
 
-Website URL
-
-The website is currently pending. Please check back later for updates.
-Contributing
-
-Contributions are welcome! Please follow the guidelines outlined in CONTRIBUTING.md to contribute to the project.
-License
-
-This project is licensed under the MIT License. Feel free to modify and distribute the code for personal and commercial use.
+Website URL: https://portfolio-f2472.firebaseapp.com/
