@@ -15,7 +15,16 @@ const MainNavbar = () => {
                 {/* Navbar of Home Page */}
                 <Navbar bg="dark" variant="dark" expand="lg">
                     {/* Logo */}
-                    <Navbar.Brand as={Link} to="/">Your Logo or Brand</Navbar.Brand>
+
+                    <Navbar.Brand as={Link} to="/" style={{ marginLeft: '20px' }}>
+                        <img
+                            src="/km_logo-removebg-preview.png"
+                            height="60"
+                            className="d-inline-block align-top"
+                            alt="Your Logo or Brand"
+                        />
+                    </Navbar.Brand>
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         {/* Center align navigation links */}
