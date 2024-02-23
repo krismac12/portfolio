@@ -251,7 +251,7 @@ const Home = () => {
                                     className="mb-5"
                                     viewport={{ once: true }}
                                 >
-                                    <h5>I am a passionate developer dedicated to sculpting immersive <span className={pagesCSS['highlight']}>digital landscapes </span>. With expertise in <span className={pagesCSS['highlight']}>frontend and backend technologies</span>, I orchestrate seamless user interactions while fortifying the structural integrity of digital systems. <span className={pagesCSS['highlight']}>Driven by innovation</span> I thrive on transforming concepts into captivating online realities. </h5>                                       
+                                    <h5>I am a dedicated developer with a focus on sculpting immersive <span className={pagesCSS['highlight']}>digital landscapes</span>. Proficient in <span className={pagesCSS['highlight']}>backend technologies</span> as well as frontend development, I specialize in fortifying the structural integrity of digital systems while ensuring seamless user interactions. <span className={pagesCSS['highlight']}>Driven by innovation</span>, I am passionate about transforming concepts into captivating online realities.</h5>
                                 </motion.p>
                             </Col>
                         </Row>
