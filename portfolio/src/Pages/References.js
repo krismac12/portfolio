@@ -33,16 +33,16 @@ const ReferencesPage = () => {
             <Container className="my-5">
                 <h2>References</h2>
                 {references.map((reference, index) => (
-                    <div key={index}>
-                        <Row className="text-center">
+                    <div key={index} className="mb-4">
+                        <Row className="text-center mb-3">
                             <h3>{reference.name}</h3>
                         </Row>
-                        <Row className={`mt-4 ${referencesCSS['reference-item']}`} style={{ border: '1px solid #dee2e6', borderRadius: '5px', padding: '10px' }}>
-                            <Col xs={3}>
+                        <Row className={`mb-4 ${referencesCSS['reference-item']}`} style={{ border: '1px solid #dee2e6', borderRadius: '5px', padding: '10px' }}>
+                            <Col xs={12} md={3} className="mb-3 mb-md-0">
                                 <Image src={reference.image} roundedCircle className={referencesCSS['reference-image']} style={{ width: '100%' }} />
                             </Col>
-                            <Col xs={9}>
-                                <Table>
+                            <Col xs={12} md={9}>
+                                <Table responsive>
                                     <tbody>
                                         <tr>
                                             <td><strong>Position:</strong></td>
@@ -59,10 +59,8 @@ const ReferencesPage = () => {
                                     </tbody>
                                 </Table>
                                 <p>{reference.description}</p>
-
                             </Col>
                         </Row>
-                        <br />
                     </div>
                 ))}
             </Container>

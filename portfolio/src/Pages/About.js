@@ -17,13 +17,6 @@ const About = () => {
             iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' }
         },
         {
-            title: 'Web Developer for Greenfield Farming Real Estate',
-            subtitle: 'Brisbane, QLD',
-            date: '2024 - Current',
-            content: 'As the Sole Web Developer for Greenfield Farming Real Estate (GFRE), I have been instrumental in developing and maintaining the GFRE website using WordPress and managing its hosting using CPanel. My responsibilities include implementing new features, optimizing website performance, and ensuring a seamless user experience.',
-            iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' }
-        },
-        {
             title: 'Freelancer',
             subtitle: 'Brisbane, QLD',
             date: '2020 - Current',

@@ -36,7 +36,7 @@
 }
 
 .card {
-    width: 400px;
+    width: 20vw;
     /* Set a fixed width for each card */
     margin: 10px;
     /* Add some margin between the cards */
@@ -72,4 +72,24 @@
     height: 75vh;
 }
 
+@media only screen and (max-width: 768px) {
+    .portrait {
+        height: 20vh;
+        /* Let the height be determined by content */
+        /* Adjust height for mobile devices */
+        /* You can set a specific height for mobile if needed */
+    }
+
+    /* Stack elements on top of each other */
+    .card {
+        width: 70vw;
+        /* Take full width */
+        margin: 10px auto;
+        /* Center the cards */
+    }
+    .conteudo {
+            width: 80%;
+            margin: auto;
+    }
+}
 
