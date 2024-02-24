@@ -80,16 +80,16 @@ const ProjectPage = () => {
                                 <ul>
                                     {project.content.map((section, index) => (
                                         <li key={index}>
-                                            <a href={`#section-${index}`}>{section.title}</a>
+                                            <a href={`#${section.title}`}>{section.title}</a>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                         </Col>
-                        <Col md={9}>
+                        <Col md={12}>
                             <div className={`project-content ${pagesCSS['content-with-border']}`}>
-                                {project.content.map((section, sectionIndex) => (
-                                    <div key={sectionIndex} id={`section-${sectionIndex}`} className={projectCSS['section']}>
+                                {project.content.map((section) => (
+                                    <div key={section.title} id={`${section.title}`} className={projectCSS['section']}>
                                         <h4>{section.title}</h4>
                                         <p>{section.description}</p>
                                         {section.image && (
