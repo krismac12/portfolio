@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
-
+import Contact from '../Components/ContactInfo';
 /**
  * Home component displays a carousel of projects with left and right navigation arrows.
  */
@@ -110,7 +110,6 @@ const Home = () => {
         <div className={pagesCSS['main']}>
             {/* MainNavbar component for navigation */}
             <MainNavbar />
-
             {/* Animation div first*/}
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0 }} viewport={{ once: true }}>
@@ -136,7 +135,7 @@ const Home = () => {
                                     <h5>I am a <span className={pagesCSS['highlight']}>passionate developer</span> dedicated to sculpting immersive digital landscapes. With expertise in both <span className={pagesCSS['highlight']}>frontend and backend technologies</span>, I orchestrate seamless user interactions while fortifying the structural integrity of digital systems. Driven by innovation, I thrive on <span className={pagesCSS['highlight']}>transforming concepts into captivating online realities.</span></h5>
                                 </motion.p>
                                 <motion.div initial={{ opacity: 0, x: '-10%' }} animate={{ opacity: 1, x: '0%' }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} viewport={{ once: true }}>
-                                    <button className="btn btn-primary">Contact Info</button>
+                                    <Contact />
                                 </motion.div>
                             </Col>
                             

@@ -6,6 +6,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Headroom from 'react-headroom';
 import navbar from "../CSS/navbar.module.css"; // Import CSS module for styling
 import MobileNavbar from './MobileNavbar';
+import Contact from './ContactInfo';
 const MainNavbar = () => {
     const [isMobile, setIsMobile] = useState(false);
 
