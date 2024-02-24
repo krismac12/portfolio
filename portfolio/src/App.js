@@ -7,6 +7,8 @@ import Home from './Pages/Home';
 import SkillPost from './Pages/SkillPost';
 import ReferencesPage from './Pages/References';
 import About from './Pages/About';
+import ProjectPage from './Pages/ProjectPage'; // Import the ProjectPage component
+
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -40,7 +42,7 @@ function App() {
         <Route path="/skill/:skill" exact element={<SkillPost />}></Route>
         <Route path="/references" exact element={<ReferencesPage />}></Route>
         <Route path="/about" exact element={<About />}></Route>
-
+        <Route path="/project/:projectId" exact element={<ProjectPage />} />
       </Routes>
     </BrowserRouter>
   );

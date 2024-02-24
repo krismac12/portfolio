@@ -23,21 +23,21 @@ const Home = () => {
             name: 'Project 1',
             image: 'project1.jpg',
             description: 'Description for Project 1',
-            pageLink: '/project1'
+            pageLink: '/project/1'
         },
         {
             id: 2,
             name: 'Project 2',
             image: 'project2.jpg',
             description: 'Description for Project 2',
-            pageLink: '/project2'
+            pageLink: '/project/2'
         },
         {
             id: 3,
             name: 'Project 3',
             image: 'project2.jpg',
             description: 'Description for Project 2',
-            pageLink: '/project2'
+            pageLink: '/project/2'
         },
         // Add more projects as needed
     ]);
@@ -117,7 +117,7 @@ const Home = () => {
                     <Container className="my-5">
                         <Row>
                             <Col md={6}> {/* Adjust the column size to your preference */}
-                                <div className={homeCSS['title']}>
+                                <div className={`${homeCSS['title']} ${pagesCSS['main-header']}`}>
                                     <h2 className="text-left"><b>My Name Is Kristan Macaraeg</b></h2>
                                     <h3 className="text-left">A <span className={pagesCSS['highlight']}>Full-Stack Developer</span></h3>
                                 </div>

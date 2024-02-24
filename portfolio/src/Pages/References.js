@@ -31,7 +31,7 @@ const ReferencesPage = () => {
             <MainNavbar />
 
             <Container className="my-5">
-                <h2>References</h2>
+                <h2 className={`${pagesCSS['main-header']}`}>References</h2>
                 {references.map((reference, index) => (
                     <div key={index} className="mb-4">
                         <Row className="text-center mb-3">

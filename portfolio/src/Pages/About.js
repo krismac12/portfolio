@@ -57,7 +57,7 @@ const About = () => {
             <Container className="my-5">
                 <Row>
                     <Col>
-                        <h2>My Journey</h2>
+                        <h2 className={`${pagesCSS['main-header']}`}>My Journey</h2>
                         <p>
                             Throughout my academic and professional journey, I've been fortunate to engage in diverse experiences that have shaped my career in technology. From leading development projects to freelancing and pursuing higher education, each milestone has been a stepping stone towards achieving my goals.
                         </p>
