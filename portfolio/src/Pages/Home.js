@@ -20,9 +20,9 @@ const Home = () => {
     const [projects, setProjects] = useState([
         {
             id: 1,
-            name: 'Project 1',
-            image: 'project1.jpg',
-            description: 'Description for Project 1',
+            name: 'Portfolio',
+            image: 'portfolio.png',
+            description: 'Explore my portfolio website, a hub showcasing my projects and skills. Crafted with React, it offers a seamless user experience and highlights my expertise in web development. Dive into my projects, browse my skills, and discover what I have to offer in the world of technology and design.',
             pageLink: '/project/1'
         },
         {
@@ -326,7 +326,7 @@ const Home = () => {
                                     <div className={homeCSS['card-container']} key={project.id}>
                                         {/* Individual project card */}
                                         <Card className={homeCSS['card']}>
-                                            <Card.Img variant="top" src={project.image} />
+                                            <Card.Img variant="top" src={project.image}/>
                                             <Card.Body>
                                                 <Card.Title>{project.name}</Card.Title>
                                                 <Card.Text>{project.description}</Card.Text>

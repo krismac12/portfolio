@@ -21,3 +21,7 @@
             margin-top: 25%;
         }
 }
+
+.display-linebreak {
+    white-space: pre-line;
+}
