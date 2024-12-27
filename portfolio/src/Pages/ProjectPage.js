@@ -26,24 +26,28 @@ const projects = [
         ]
     },
     {
-        id: '2',
-        name: 'Project 2',
-        title: 'Project 2 Title',
-        thumbnail: '/project1_image1.jpg',
+        id: "2",
+        name: "Youniqueopal.gifts",
+        title: "Opal Jewelry Store Development",
+        thumbnail: "/younique.png",
         content: [
             {
-                title: 'Section 1',
-                description: 'Description for section 1 of Project 2.',
-                image: '/project2_image1.jpg'
+                title: "Product Page Customization",
+                description: "Customized product pages to enhance the presentation and user experience of opal jewelry items.",
+                image: "/younique-4.png"
             },
             {
-                title: 'Section 2',
-                description: 'Description for section 2 of Project 2.',
-                image: '/project2_image2.jpg'
+                title: "Collections Page Refinement",
+                description: "Refined collections pages for improved organization and easier browsing of opal jewelry collections.",
+                image: "/younique-2.png"
+            },
+            {
+                title: "Navbar Customization",
+                description: "Developed custom elements for the navbar to enhance site navigation and provide a seamless browsing experience.",
+                image: "/younique-3.png"
             }
         ]
     }
-    // Add more projects as needed
 ];
 
 const ProjectPage = () => {

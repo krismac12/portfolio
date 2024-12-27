@@ -16,7 +16,7 @@ import Contact from '../Components/ContactInfo';
  */
 const Home = () => {
     const contentRef = useRef(null);
-    const [currentIndex, setCurrentIndex] = useState(3);
+    const [currentIndex, setCurrentIndex] = useState(2);
     const [projects, setProjects] = useState([
         {
             id: 1,
@@ -27,16 +27,9 @@ const Home = () => {
         },
         {
             id: 2,
-            name: 'Project 2',
-            image: 'project2.jpg',
-            description: 'Description for Project 2',
-            pageLink: '/project/2'
-        },
-        {
-            id: 3,
-            name: 'Project 3',
-            image: 'project2.jpg',
-            description: 'Description for Project 2',
+            name: 'youniqueopal.gifts',
+            image: 'younique.png',
+            description: `At youniqueopal.gifts, I customized key page elements, including the product and collections pages, and designed unique features for the navbar. These enhancements improved user experience and streamlined navigation for opal jewelry enthusiasts. Integrating secure payment gateways and optimizing site performance further reinforced the platform's reliability and efficiency, showcasing my expertise in web development.`,
             pageLink: '/project/2'
         },
         // Add more projects as needed
@@ -325,11 +318,11 @@ const Home = () => {
                                 {projects.map(project => (
                                     <div className={homeCSS['card-container']} key={project.id}>
                                         {/* Individual project card */}
-                                        <Card className={homeCSS['card']}>
-                                            <Card.Img variant="top" src={project.image}/>
-                                            <Card.Body>
+                                        <Card className={`${homeCSS['card']} h-100`}>
+                                            <Card.Img variant="top" src={project.image} />
+                                            <Card.Body className="d-flex flex-column">
                                                 <Card.Title>{project.name}</Card.Title>
-                                                <Card.Text>{project.description}</Card.Text>
+                                                <Card.Text className="flex-grow-1">{project.description}</Card.Text>
                                                 {/* Button to view project details */}
                                                 <Link to={project.pageLink}>
                                                     <Button variant="primary">View Project</Button>
